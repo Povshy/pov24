@@ -145,7 +145,7 @@ const BalancePage: React.FC = () => {
         </div>
       </div>
       <div className="transactions">
-        {trans ? (
+        {trans && trans.length > 0 ? (
           trans
             .slice()
             .reverse()
@@ -179,7 +179,7 @@ const BalancePage: React.FC = () => {
               </div>
             ))
         ) : (
-          <p>No transactions available.</p>
+          <p className="no-trans">Список транзакцій порожній...</p>
         )}
       </div>
     </div>
