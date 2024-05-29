@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/pov24/static/css/main.4fb00742.css",
+    "main.js": "/pov24/static/js/main.41e0ca1f.js",
+    "static/media/scott.png": "/pov24/static/media/scott.4d4da805167342d275a5.png",
+    "static/media/money.png": "/pov24/static/media/money.9578c548158ffb7f495f.png",
+    "static/media/wellcome-fon.png": "/pov24/static/media/wellcome-fon.b7fc59f64df97cd203c5.png",
+    "static/media/head.png": "/pov24/static/media/head.8906ddad2c6641d89efe.png",
+    "static/media/master.svg": "/pov24/static/media/master.6f39ded214051a965baf0de65baa2cd4.svg",
+    "static/media/bitcoin.svg": "/pov24/static/media/bitcoin.7d844dbfea4c6ec4d5c2cc291bdfcb92.svg",
+    "static/media/trongreen.svg": "/pov24/static/media/trongreen.6d18684a40eae23320a0bbbfdaf43804.svg",
+    "static/media/unshow.svg": "/pov24/static/media/unshow.925facc0c10021baba18.svg",
+    "static/media/tronred.svg": "/pov24/static/media/tronred.bbec65dcf67b1125754e16f04121c501.svg",
+    "static/media/announce.svg": "/pov24/static/media/announce.0d17fbf61d532745fb8a77f8c27767b7.svg",
+    "static/media/bell.svg": "/pov24/static/media/bell.c8efe78213fc095a412addee028084d7.svg",
+    "static/media/ether.svg": "/pov24/static/media/ether.b890437dee23106647a3cde0eb433364.svg",
+    "static/media/send.svg": "/pov24/static/media/send.930ddb9fc1b714270e29b66b2bae8c7a.svg",
+    "static/media/sending.svg": "/pov24/static/media/sending.843ed5e6ea7a095694cc88b84e90c4d8.svg",
+    "static/media/busd.svg": "/pov24/static/media/busd.6201e2735bfd2bb84b1d3660cc7ab296.svg",
+    "static/media/warning.svg": "/pov24/static/media/warning.324bd20d3115ce92cbae66a6c26d63fb.svg",
+    "static/media/settings.svg": "/pov24/static/media/settings.315aecab0113ec9f220aec8f7b746473.svg",
+    "index.html": "/pov24/index.html",
+    "static/media/stripe.svg": "/pov24/static/media/stripe.2617ddf07777384b2de009f4a7ea7553.svg",
+    "static/media/coinbase.svg": "/pov24/static/media/coinbase.a32bdd6c95f296f5851d6674ac4e5104.svg",
+    "static/media/show.svg": "/pov24/static/media/show.549796ab0480c318d5b6.svg",
+    "static/media/receive.svg": "/pov24/static/media/receive.3d4fd1de39ec7ef9cc8d4f58a3624229.svg",
+    "static/media/back.svg": "/pov24/static/media/back.38ee096a5380d45c7f57cf0ef52ee4cf.svg",
+    "main.4fb00742.css.map": "/pov24/static/css/main.4fb00742.css.map",
+    "main.41e0ca1f.js.map": "/pov24/static/js/main.41e0ca1f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fb00742.css",
+    "static/js/main.41e0ca1f.js"
+  ]
+}
