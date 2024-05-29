@@ -25,7 +25,7 @@ function App() {
   return (
     <AuthProvider>
       <div className="page">
-        <BrowserRouter>
+        <BrowserRouter basename="/pov24">
           <Routes>
             <Route
               index
