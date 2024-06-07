@@ -12,6 +12,7 @@ const TransactionPage: React.FC = () => {
     amount: number;
     type: string;
     name: string;
+    userEmail: string;
     date: string;
   } | null>(null);
 
@@ -114,7 +115,11 @@ const TransactionPage: React.FC = () => {
               <hr className="line" />
               <div className="transaction-value">
                 <p>Name:</p>
-                <p>{transaction.name}</p>
+                <p>
+                  {isReceipt(transaction)
+                    ? transaction.userEmail
+                    : transaction.name}
+                </p>
               </div>
               <hr className="line" />
               <div className="transaction-value">

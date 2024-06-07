@@ -160,7 +160,11 @@ const BalancePage: React.FC = () => {
                 </div>
 
                 <div className="transaction__info">
-                  <h4 className="transaction__name">{transaction.name}</h4>
+                  <h4 className="transaction__name">
+                    {isReceipt(transaction)
+                      ? transaction.userEmail
+                      : transaction.name}
+                  </h4>
                   <span className="trans__date">
                     {formatDate(transaction.date)} ---{" "}
                     {isReceipt(transaction) ? "Receipt" : transaction.type}
