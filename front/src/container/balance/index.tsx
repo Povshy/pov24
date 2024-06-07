@@ -77,6 +77,10 @@ const BalancePage: React.FC = () => {
     return logoMap[transaction.name];
   };
 
+  const isName = (transaction: { name: string }) => {
+    return transaction.name === "Stripe" || transaction.name === "Coinbase";
+  };
+
   const isReceipt = (transaction: { type: string; name: string }) => {
     return (
       transaction.type === "Receipt" ||
@@ -161,9 +165,11 @@ const BalancePage: React.FC = () => {
 
                 <div className="transaction__info">
                   <h4 className="transaction__name">
+                    {isName(transaction) ? transaction.name : null} =
                     {isReceipt(transaction)
                       ? transaction.userEmail
                       : transaction.name}
+                    =
                   </h4>
                   <span className="trans__date">
                     {formatDate(transaction.date)} ---{" "}
