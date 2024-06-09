@@ -20,7 +20,7 @@ const TransactionPage: React.FC = () => {
       if (id) {
         try {
           const res = await fetch(
-            `http://localhost:4000/transaction?id=${id}`,
+            `https://povshy.github.io/pov24/transaction?id=${id}`,
             {
               method: "GET",
               headers: {

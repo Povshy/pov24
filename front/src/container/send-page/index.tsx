@@ -53,7 +53,7 @@ const SendPage: React.FC = () => {
       }
       const user = JSON.parse(userString);
 
-      const res = await fetch(`http://localhost:4000/send`, {
+      const res = await fetch(`https://povshy.github.io/pov24/send`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

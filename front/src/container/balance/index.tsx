@@ -36,12 +36,15 @@ const BalancePage: React.FC = () => {
           throw new Error("ID користувача не вказано");
         }
 
-        const res = await fetch(`http://localhost:4000/balance?id=${user.id}`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const res = await fetch(
+          `https://povshy.github.io/pov24/balance?id=${user.id}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
 
         if (!res.ok) {
           const errorData = await res.json();

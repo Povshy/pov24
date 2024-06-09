@@ -48,7 +48,7 @@ const SignupPage: React.FC = () => {
         throw new Error("Введіть дійсну адресу електронної пошти");
       }
 
-      const res = await fetch("http://localhost:4000/signup", {
+      const res = await fetch("https://povshy.github.io/pov24/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

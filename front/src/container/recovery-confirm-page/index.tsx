@@ -48,17 +48,20 @@ const RecoveryConfirmPage: React.FC = () => {
 
   const handleContinue = async () => {
     try {
-      const res = await fetch("http://localhost:4000/recovery-confirm", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          code: state.code,
-          password: state.password,
-          id: id,
-        }),
-      });
+      const res = await fetch(
+        "https://povshy.github.io/pov24/recovery-confirm",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            code: state.code,
+            password: state.password,
+            id: id,
+          }),
+        }
+      );
 
       if (!res.ok) {
         const errorData = await res.json();

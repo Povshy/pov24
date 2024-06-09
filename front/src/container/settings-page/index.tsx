@@ -60,7 +60,7 @@ const SettingsPage: React.FC = () => {
       }
       const user = JSON.parse(userString);
 
-      const res = await fetch(`http://localhost:4000/change-email`, {
+      const res = await fetch(`https://povshy.github.io/pov24/change-email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -109,17 +109,20 @@ const SettingsPage: React.FC = () => {
       }
       const user = JSON.parse(userString);
 
-      const res = await fetch(`http://localhost:4000/change-password`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          id: user.id,
-          oldPassword: state.oldPassword,
-          newPassword: state.newPassword,
-        }),
-      });
+      const res = await fetch(
+        `https://povshy.github.io/pov24/change-password`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            id: user.id,
+            oldPassword: state.oldPassword,
+            newPassword: state.newPassword,
+          }),
+        }
+      );
 
       if (!res.ok) {
         const errorData = await res.json();

@@ -41,7 +41,7 @@ const SignupConfirmPage: React.FC = () => {
 
   const handleConfirm = async () => {
     try {
-      const res = await fetch("http://localhost:4000/signup-confirm", {
+      const res = await fetch("https://povshy.github.io/pov24/signup-confirm", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

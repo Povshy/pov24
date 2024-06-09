@@ -19,7 +19,7 @@ const NotificationPage: React.FC = () => {
       if (id) {
         try {
           const res = await fetch(
-            `http://localhost:4000/notification?id=${id}`,
+            `https://povshy.github.io/pov24/notification?id=${id}`,
             {
               method: "GET",
               headers: {

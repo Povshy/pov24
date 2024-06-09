@@ -35,7 +35,7 @@ const RecoveryPage: React.FC = () => {
 
   const handleContinue = async () => {
     try {
-      const res = await fetch("http://localhost:4000/recovery", {
+      const res = await fetch("https://povshy.github.io/pov24/recovery", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
